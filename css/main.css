@@ -487,10 +487,9 @@ h1 {
 
 .card-izquierda {
   background-color: #fbbea4;
-  /* color: #141c16; */
   color: #fcfcfc;
   text-align: left;
-  /* margin-right: 30%; */
+
   grid-column-start: 1;
   grid-column-end: 3;
   display: flex;
@@ -501,12 +500,9 @@ h1 {
 }
 
 .card-derecha {
-  /* color: #fbbea4; */
-  /* background-color: #141c16; */
   color: #fcfcfc;
   background-color: #868d93;
   text-align: right;
-  /* margin-left: 30%; */
   grid-column-start: 2;
   grid-column-end: 4;
   display: flex;
@@ -517,18 +513,15 @@ h1 {
 }
 
 .card__imagen {
-  /* background-color: chartreuse; */
   width: 300px;
   height: 300px;
   display: inline-block;
-  /* margin: 0 50px; */
 }
 
 .card__titulo {
   font-size: 50px;
   font-weight: 800;
   margin: 0 50px;
-  /* display: inline-block; */
 }
 .card__titulo-left {
   text-align: left;

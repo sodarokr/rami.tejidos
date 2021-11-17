@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS-->
-    <link rel="stylesheet" href="css/main.css" />
-
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Rami. Hecho a mano con amor</title>
   </head>
 
@@ -66,35 +70,35 @@
     <main class="productos">
       <!--* PRODUCTOS -->
 
-      <div class="card card-izquierda">
+      <div class="card card-izquierda" data-aos="fade-right">
         <img class="card__imagen" src="public/img/card1.jpg" alt="Amigurumi" />
         <p class="card__titulo card__titulo-left">AMIGURUMIS</p>
       </div>
-      <div class="card card-derecha">
+      <div class="card card-derecha" data-aos="fade-left">
         <p class="card__titulo card__titulo-left">TRAPILLO</p>
         <img class="card__imagen" src="public/img/card2.jpg" alt="Amigurumi" />
       </div>
-      <div class="card card-izquierda">
+      <div class="card card-izquierda" data-aos="fade-right">
         <img class="card__imagen" src="public/img/card3.jpg" alt="Amigurumi" />
         <p class="card__titulo card__titulo-left">CROCHET</p>
       </div>
-      <div class="card card-derecha">
+      <div class="card card-derecha" data-aos="fade-left">
         <p class="card__titulo card__titulo-left">INDUMENTARIA BEBÉ</p>
         <img class="card__imagen" src="public/img/card4.jpg" alt="Amigurumi" />
       </div>
-      <div class="card card-izquierda">
+      <div class="card card-izquierda" data-aos="fade-right">
         <img class="card__imagen" src="public/img/card5.jpg" alt="Amigurumi" />
         <p class="card__titulo card__titulo-left">TEJIDOS DE PUNTO</p>
       </div>
-      <div class="card card-derecha">
+      <div class="card card-derecha" data-aos="fade-left">
         <p class="card__titulo card__titulo-left">ACCESORIOS MONTESSORI</p>
         <img class="card__imagen" src="public/img/card6.jpg" alt="Amigurumi" />
       </div>
-      <div class="card card-izquierda">
+      <div class="card card-izquierda" data-aos="fade-right">
         <img class="card__imagen" src="public/img/card7.jpg" alt="Amigurumi" />
         <p class="card__titulo card__titulo-left">COLECCION APEGOS</p>
       </div>
-      <div class="card card-derecha">
+      <div class="card card-derecha" data-aos="fade-left">
         <p class="card__titulo card__titulo-left">HOLDERS</p>
         <img class="card__imagen" src="public/img/card8.jpg" alt="Amigurumi" />
       </div>
@@ -140,5 +144,11 @@
         </li>
       </ul>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
