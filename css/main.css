@@ -410,8 +410,8 @@ header {
 /* ====LOGO==== */
 
 .logo-main {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   left: 15px;
   top: 0;
@@ -427,8 +427,8 @@ header {
 }
 
 .presentacion-img {
-  max-width: 500px;
-  min-width: 250px;
+  max-width: 400px;
+  min-width: 200px;
 }
 
 /* ====SEPARADOR==== */
@@ -759,3 +759,23 @@ section[class*="sec-"] {
   font-size: 18px;
   margin: 0 auto 90px auto;
 }
+
+/* ===========================VARIABLES============================== */
+
+.my--color-gris-oscuro {
+  color: #868d93;
+}
+
+.my--color-casi-blanco {
+  color: #fbfbfb;
+}
+
+.my--bgcolor-gris-oscuro {
+  background-color: #868d93;
+}
+
+.my--bgcolor-casi-blanco {
+  background-color: #fbfbfb;
+}
+
+/* =====================SOBREESCRITURA BOOTSTRAP============== */
