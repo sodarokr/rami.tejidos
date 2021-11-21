@@ -42,11 +42,12 @@
         navbar
         sticky-top
         navbar-expand-lg navbar-dark
-        my--bgcolor-gris-oscuro
+        my-bgcolor-gris-oscuro
         p-3
+        mb-5
       "
     >
-      <div class="container-fluid">
+      <div class="container-fluid d-flex justify-content-end">
         <button
           class="navbar-toggler"
           type="button"
@@ -83,10 +84,9 @@
       <img class="logo-main" src="public/img/logoMain.png" alt="RamiTejidos" />
     </nav>
 
-    <header class="my-5">
+    <header class="mb-5">
       <!-- CAROUSEL -->
-
-      <div class="container">
+      <div class="container mb-4">
         <div class="row d-flex justify-content-center">
           <div class="col-md-12">
             <div
@@ -168,87 +168,214 @@
         </div>
       </div>
 
-      <!-- IMAGENES DE PRESENTACION -->
+      <!-- SEPARADOR HECHO CON AMOR -->
+      <div class="container mb-4">
+        <p class="separador">#hechoamanoconamor</p>
+      </div>
 
-      <div class="container">
-        <div class="row py-3 gx-5">
+      <!-- IMAGENES DE PRESENTACION -->
+      <div class="container mb-4">
+        <div class="row gx-5">
           <div class="col-md-4">
             <img
-              class="presentacion-img"
+              class="img-fluid"
               src="public/img/Frame8.png"
               alt="Amigurumis"
             />
           </div>
           <div class="col-md-4">
-            <img
-              class="presentacion-img"
-              src="public/img/Frame9.png"
-              alt="Lanas"
-            />
+            <img class="img-fluid" src="public/img/Frame9.png" alt="Lanas" />
           </div>
           <div class="col-md-4">
             <img
-              class="presentacion-img"
+              class="img-fluid"
               src="public/img/Frame10.png"
               alt="Indumentaria"
             />
           </div>
         </div>
       </div>
-      <!-- <div class="presentacion">
-        <img
-          class="presentacion-img"
-          src="public/img/Frame8.png"
-          alt="Amigurumis"
-        />
-        <img class="presentacion-img" src="public/img/Frame9.png" alt="Lanas" />
-        <img
-          class="presentacion-img"
-          src="public/img/Frame10.png"
-          alt="Indumentaria"
-        />
-      </div>
-
-      <div class="separador">#hechoamanoconamor</div> -->
     </header>
 
-    <h1 class="nuestros-productos">NUESTROS PRODUCTOS</h1>
+    <main class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="nuestros-productos">NUESTROS PRODUCTOS</h1>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-start mb-3">
+          <div
+            data-aos="fade-right"
+            class="
+              col-md-8
+              my-card-izquierda
+              d-flex
+              justify-content-start
+              align-items-center
+              p-0
+            "
+          >
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/amigurumis/correcaminos.jpg"
+              alt="Amigurumi"
+            />
+            <p class="card__titulo card__titulo-left">AMIGURUMIS</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-end mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-derecha
+              d-flex
+              justify-content-end
+              align-items-center
+              p-0
+            "
+            data-aos="fade-left"
+          >
+            <p class="card__titulo card__titulo-left">TRAPILLO</p>
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card2.jpg"
+              alt="Amigurumi"
+            />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-start mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-izquierda
+              d-flex
+              justify-content-start
+              align-items-center
+              p-0
+            "
+            data-aos="fade-right"
+          >
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card3.jpg"
+              alt="Amigurumi"
+            />
+            <p class="card__titulo card__titulo-left">CROCHET</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-end mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-derecha
+              d-flex
+              justify-content-end
+              align-items-center
+              p-0
+            "
+            data-aos="fade-left"
+          >
+            <p class="card__titulo card__titulo-left">INDUMENTARIA BEBÉ</p>
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card4.jpg"
+              alt="Amigurumi"
+            />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-start mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-izquierda
+              d-flex
+              justify-content-start
+              align-items-center
+              p-0
+            "
+            data-aos="fade-right"
+          >
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card5.jpg"
+              alt="Amigurumi"
+            />
+            <p class="card__titulo card__titulo-left">TEJIDOS DE PUNTO</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-end mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-derecha
+              d-flex
+              justify-content-end
+              align-items-center
+              p-0
+            "
+            data-aos="fade-left"
+          >
+            <p class="card__titulo card__titulo-right">ACCESORIOS MONTESSORI</p>
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card6.jpg"
+              alt="Amigurumi"
+            />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-start mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-izquierda
+              d-flex
+              justify-content-start
+              align-items-center
+              p-0
+            "
+            data-aos="fade-right"
+          >
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card7.jpg"
+              alt="Amigurumi"
+            />
+            <p class="card__titulo card__titulo-left">COLECCION APEGOS</p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-end mb-3">
+          <div
+            class="
+              col-md-8
+              my-card-derecha
+              d-flex
+              justify-content-end
+              align-items-center
+              p-0
+            "
+            data-aos="fade-left"
+          >
+            <p class="card__titulo card__titulo-left">HOLDERS</p>
+            <img
+              class="card__imagen img-fluid"
+              src="public/img/card8.jpg"
+              alt="Amigurumi"
+            />
+          </div>
+        </div>
+      </div>
 
-    <main class="productos">
       <!--* PRODUCTOS -->
 
-      <div class="card card-izquierda" data-aos="fade-right">
-        <img class="card__imagen" src="public/img/card1.jpg" alt="Amigurumi" />
-        <p class="card__titulo card__titulo-left">AMIGURUMIS</p>
-      </div>
-      <div class="card card-derecha" data-aos="fade-left">
-        <p class="card__titulo card__titulo-left">TRAPILLO</p>
-        <img class="card__imagen" src="public/img/card2.jpg" alt="Amigurumi" />
-      </div>
-      <div class="card card-izquierda" data-aos="fade-right">
-        <img class="card__imagen" src="public/img/card3.jpg" alt="Amigurumi" />
-        <p class="card__titulo card__titulo-left">CROCHET</p>
-      </div>
-      <div class="card card-derecha" data-aos="fade-left">
-        <p class="card__titulo card__titulo-left">INDUMENTARIA BEBÉ</p>
-        <img class="card__imagen" src="public/img/card4.jpg" alt="Amigurumi" />
-      </div>
-      <div class="card card-izquierda" data-aos="fade-right">
-        <img class="card__imagen" src="public/img/card5.jpg" alt="Amigurumi" />
-        <p class="card__titulo card__titulo-left">TEJIDOS DE PUNTO</p>
-      </div>
-      <div class="card card-derecha" data-aos="fade-left">
-        <p class="card__titulo card__titulo-left">ACCESORIOS MONTESSORI</p>
-        <img class="card__imagen" src="public/img/card6.jpg" alt="Amigurumi" />
-      </div>
-      <div class="card card-izquierda" data-aos="fade-right">
-        <img class="card__imagen" src="public/img/card7.jpg" alt="Amigurumi" />
-        <p class="card__titulo card__titulo-left">COLECCION APEGOS</p>
-      </div>
-      <div class="card card-derecha" data-aos="fade-left">
-        <p class="card__titulo card__titulo-left">HOLDERS</p>
-        <img class="card__imagen" src="public/img/card8.jpg" alt="Amigurumi" />
-      </div>
+      <div class="card card-izquierda" data-aos="fade-right"></div>
+      <div class="card card-derecha" data-aos="fade-left"></div>
+      <div class="card card-izquierda" data-aos="fade-right"></div>
+      <div class="card card-derecha" data-aos="fade-left"></div>
+      <div class="card card-izquierda" data-aos="fade-right"></div>
+      <div class="card card-derecha" data-aos="fade-left"></div>
+      <div class="card card-izquierda" data-aos="fade-right"></div>
+      <div class="card card-derecha" data-aos="fade-left"></div>
     </main>
     <!-- DONDE ESTAMOS? -->
     <section class="donde-estamos">
