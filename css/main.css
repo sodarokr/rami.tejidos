@@ -484,7 +484,8 @@ h1 {
 }
 
 .my-card-izquierda {
-  background-color: #fbbea4;
+  /* background-color: #fbbea4; */
+  background-color: #868d93;
   color: #fcfcfc;
   text-align: left;
   border: solid 2px #fcfcfc;
@@ -520,23 +521,24 @@ h1 {
 }
 
 /* DONDE ESTAMOS? */
-.donde-estamos {
-  background-color: #fcfcfc;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  text-align: center;
+#donde-estamos {
+  background-image: url(../public/img/rectangle-pink.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .donde-estamos__titulo {
   font-size: 48px;
   font-weight: 600;
   line-height: 80px;
-  color: #868d93;
-  text-align: center;
+  color: #fcfcfc;
+  margin: 150px 0 75px 0;
 }
 
+.donde-estamos__mapa {
+  margin-bottom: 200px;
+}
 /* ==============================FOOTER======================== */
 
 footer {
