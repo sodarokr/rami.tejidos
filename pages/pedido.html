@@ -147,24 +147,60 @@
     /></a>
 
     <footer>
-      <ul class="footer__ul">
-        <li>
-          <p class="footer__div-titulo">CONTACTO:</p>
-          <ul class="contacto">
-            <li>ramitejidos@gmail.com</li>
-            <li>+5492615461993</li>
-          </ul>
-        </li>
-        <li>
-          <p class="footer__div-titulo">NUESTRAS REDES:</p>
-          <img src="../public/img/facebook.png" alt="facebook" />
-          <img src="../public/img/instagram.png" alt="instagram" />
-        </li>
-        <li>
-          <p class="footer__div-titulo">CREADO POR:</p>
-          <p>JUAN</p>
-        </li>
-      </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <h3 class="footer__div-titulo">CONTACTO</h3>
+            <ul class="contacto">
+              <li>ramitejidos@gmail.com</li>
+              <li>+5492615461993</li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <h3 class="footer__div-titulo">NUESTRAS REDES</h3>
+            <div class="redes">
+              <img
+                class="footer-img"
+                src="../public/img/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="footer-img"
+                src="../public/img/instagram.png"
+                alt="instagram"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 class="footer__div-titulo">NEWSLETTER</h3>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tu dirección de correo"
+                aria-label="Tu dirección de correo"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Suscribirme
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <script src="../js/bootstrap.js"></script>
   </body>
 </html>
