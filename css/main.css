@@ -469,11 +469,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 /* CARDS DEL HOME */
-.card {
-  /* height: 300px;
-  width: 1100px;
-  margin: auto;
-  margin-bottom: 75px; */
+/* .card {
   border: solid 2px #fcfcfc;
   transition: all 0.4s, border 0.2s;
 }
@@ -481,7 +477,7 @@ h1 {
 .card:hover {
   border: solid 2px black;
   transform: translate(0, -15px);
-}
+} */
 
 .my-card-izquierda {
   /* background-color: #fbbea4; */
@@ -542,27 +538,10 @@ h1 {
 /* ==============================FOOTER======================== */
 
 footer {
-  grid-area: "footer";
-  background-color: #868d93;
-  text-align: center;
+  color: black;
 }
 
-.footer__ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-}
-
-.footer__ul li {
-  display: inline-block;
-  list-style-type: none;
-  text-align: center;
-  width: 400px;
-}
-
-.footer__ul img {
+.footer-img {
   width: 80px;
   height: 80px;
   padding: 15px;
@@ -578,9 +557,9 @@ footer {
 }
 .contacto li {
   list-style-type: none;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: #fcfcfc;
+  color: #000000;
   margin-bottom: 15px;
 }
 
@@ -589,6 +568,7 @@ footer {
   font-weight: 700;
   color: #fbbea4;
   text-align: center;
+  margin-bottom: 30px;
 }
 .creador {
   font-size: 24px;

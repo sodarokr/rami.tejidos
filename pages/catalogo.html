@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
     <!-- CSS-->
     <link rel="stylesheet" href="../css/main.css" />
 
@@ -22,38 +25,128 @@
     <header class="header-catalogo">
       <!--* Logo que siempre envia a Inicio y nombre del emprendimiento -->
       <!--* Menu navegación del sitio -->
-      <nav class="nav">
-        <ul class="nav-ul">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
-          <li><a href="pedido.html">Hacé tu pedido</a></li>
-          <li><a href="nuestrahistoria.html">Nuestra Historia</a></li>
-          <li><a href="politica.html">Política de Devolución</a></li>
-        </ul>
+
+      <nav
+        class="
+          navbar
+          sticky-top
+          navbar-expand-lg navbar-dark
+          my-bgcolor-gris-oscuro
+          p-3
+          mb-5
+        "
+      >
+        <div class="container-fluid d-flex justify-content-end">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link active p-2" href="catalogo.html">Catálogo</a>
+
+              <a class="nav-link" href="pedido.html">Hacé tu pedido</a>
+              <a class="nav-link" href="nuestrahistoria.html"
+                >Nuestra Historia</a
+              >
+              <a class="nav-link" href="politica.html"
+                >Política de Devolución</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- LOGO -->
+        <img
+          class="logo-main"
+          src="../public/img/logoMain.png"
+          alt="RamiTejidos"
+        />
       </nav>
-      <img
-        class="logo-main"
-        src="../public/img/logoMain.png"
-        alt="RamiTejidos"
-      />
     </header>
 
     <section class="intro-catalogo">
-      <!--* CATALOGO  -->
-      <h1 class="nuestro-catalogo">NUESTRO CATALOGO</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!--* CATALOGO  -->
+            <h1 class="nuestro-catalogo">NUESTRO CATALOGO</h1>
 
-      <h2 class="subtitulo-catalogo">
-        Hemos agrupado todo nuestro trabajo pensando en vos.
-      </h2>
+            <h2 class="subtitulo-catalogo">
+              Hemos agrupado todo nuestro trabajo pensando en vos.
+            </h2>
 
-      <h3 class="detalle-catalogo">
-        Queremos que sea muy fácil que encuentres lo que buscas y te invitamos a
-        explorar otras secciones.
-      </h3>
+            <h3 class="detalle-catalogo">
+              Queremos que sea muy fácil que encuentres lo que buscas y te
+              invitamos a explorar otras secciones.
+            </h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--* SECCIONES CATALOGO  -->
-    <main class="catalogo-wrapper">
+
+    <main>
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <main class="catalogo-wrapper">
       <section class="sec-amigurumi">
         <div class="seccion-catalogo__titulo">Amigurumis</div>
         <div class="seccion-catalogo__galeria">
@@ -382,7 +475,7 @@
           </article>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <a href="https://web.whatsapp.com/" target="_blank"
       ><img
