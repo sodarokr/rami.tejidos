@@ -655,9 +655,12 @@ section[class*="sec-"] {
 }
 /* ===========================PEDIDO========================= */
 .main-pedido {
-  background-color: black;
   background-image: url(../public/img/card1.jpg);
+  background-color: black;
+
   background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .form {

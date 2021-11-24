@@ -21,7 +21,7 @@
     <title>Rami. Hecho a mano con amor</title>
   </head>
 
-  <body class="main-pedido">
+  <body>
     <header>
       <nav
         class="
@@ -76,66 +76,100 @@
         />
       </nav>
     </header>
-    <main>
-      <h1>Hacénos tu pedido!</h1>
+    <main class="main-pedido mb-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <h1>Hacénos tu pedido!</h1>
 
-      <form class="form" action="">
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          class="form__campo"
-          placeholder="Nombre"
-        />
-        <input
-          type="text"
-          name="apellido"
-          id="apellido"
-          class="form__campo"
-          placeholder="Apellido"
-        />
-        <input
-          type="text"
-          name="correo"
-          id="correo"
-          class="form__campo"
-          placeholder="Correo Electrónico"
-        />
-        <input
-          type="text"
-          name="telefono"
-          id="telefono"
-          class="form__campo"
-          placeholder="Teléfono Celular"
-        />
-        <input type="checkbox" name="envio" id="envio" />
-        <label for="envio" class="form__label">Necesito Envío</label>
-      </form>
+            <form class="row g-3">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreusuario"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidousuario"
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correousuario"
+                  placeholder="Correo Electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telusuario"
+                  placeholder="Teléfono"
+                />
+              </div>
 
-      <div class="detalle-pedido">
-        <select name="desplegable-productos" class="desplegable-productos">
-          <option value="amigurumis" selected>Amigurumis</option>
-          <option value="trapillo">Trapillo</option>
-          <option value="crochet">Crochet</option>
-          <option value="indumentaria-bebe">Indumentaria Bebé</option>
-          <option value="tejidos">Tejidos de Punto</option>
-          <option value="montessori">Accesorios Montessori</option>
-          <option value="apegos">Apegos</option>
-          <option value="holders">Holders</option>
-        </select>
-
-        <select name="desplegable-cantidad" class="desplegable-cantidad">
-          <option value="1" selected>1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
+              <div class="mb-3 d-flex">
+                <div class="col-md-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="amigurumis" selected>Amigurumis</option>
+                    <option value="trapillo">Trapillo</option>
+                    <option value="crochet">Crochet</option>
+                    <option value="indumentaria-bebe">Indumentaria Bebé</option>
+                    <option value="tejidos">Tejidos de Punto</option>
+                    <option value="montessori">Accesorios Montessori</option>
+                    <option value="apegos">Apegos</option>
+                    <option value="holders">Holders</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-check d-flex justify-content-center mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Necesito envío
+                </label>
+              </div>
+              <div class="mb-3 d-flex justify-content-center">
+                <button class="btn btn-primary" type="submit">
+                  Enviar Pedido
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
 
