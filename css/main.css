@@ -719,19 +719,6 @@ section[class*="sec-"] {
   margin: 0 auto 100px auto;
 }
 
-/* ===========================POLITICA========================= */
-.politica {
-  text-align: center;
-}
-
-.politica__detalle {
-  width: 1000px;
-
-  text-align: left;
-  font-size: 18px;
-  margin: 0 auto 90px auto;
-}
-
 /* ===========================VARIABLES============================== */
 
 .my-color-gris-oscuro {
