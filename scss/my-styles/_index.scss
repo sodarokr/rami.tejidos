@@ -1,0 +1,81 @@
+@import "../mixins/mixins";
+@import "../variables/variables";
+
+/* ====SEPARADOR==== */
+
+.separador {
+  background-color: $color-principal;
+  color: $color-fondo;
+  font-family: $font-family-separador;
+  font-size: 70px;
+  text-align: center;
+  padding: 35px;
+}
+
+.my-card-izquierda {
+  @include card($color-principal, $color-fondo, left, solid 2px $color-fondo);
+}
+
+.my-card-derecha {
+  @include card($color-principal, $color-fondo, right, solid 2px $color-fondo);
+}
+
+/* ====CARDS==== */
+
+.card {
+  &__imagen {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  &__titulo {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 50px;
+  }
+  &__titulo-left {
+    text-align: left;
+  }
+
+  &__titulo-right {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .my-card-derecha {
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+  .my-card-izquierda {
+    flex-direction: column-reverse;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* DONDE ESTAMOS? */
+
+.donde-estamos {
+  background-image: url(../public/img/rectangle-pink.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__titulo {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 80px;
+    color: $color-fondo;
+    margin: 150px 0 75px 0;
+  }
+
+  &__mapa {
+    margin-bottom: 200px;
+  }
+}

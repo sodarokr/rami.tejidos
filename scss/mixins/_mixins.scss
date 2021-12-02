@@ -1,0 +1,6 @@
+@mixin card($bg-color, $color, $text-align, $border) {
+  background-color: $bg-color;
+  color: $color;
+  text-align: $text-align;
+  border: $border;
+}

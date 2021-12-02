@@ -1,0 +1,33 @@
+/* ===========================CATALOGO========================= */
+
+@import "../variables/variables";
+
+/* SECCIONES */
+.catalogo-card-precio {
+  color: $color-secundario;
+  font-size: 22px;
+  text-align: center;
+}
+
+.seccion-catalogo__titulo {
+  width: 450px;
+  padding: 25px;
+  margin-bottom: 30px;
+  margin-left: 12px;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  color: $color-fondo;
+  background-color: $color-aux;
+}
+
+.card-animation {
+  transition: all 0.3s, border 0.1s;
+  &:hover {
+    border: solid 2px $color-principal-transparente;
+    transform: scale(1.05);
+  }
+}
+.catalogo-wrapper article {
+  margin-right: 25px;
+}
