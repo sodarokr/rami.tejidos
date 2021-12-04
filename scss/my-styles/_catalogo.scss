@@ -5,6 +5,7 @@
 /* SECCIONES */
 .catalogo-card-precio {
   color: $color-secundario;
+  text-shadow: 1px 1px 1px whitesmoke;
   font-size: 22px;
   text-align: center;
 }
@@ -18,6 +19,7 @@
   font-weight: 500;
   text-align: center;
   color: $color-fondo;
+  text-shadow: 1px 1px 1px rgb(163, 161, 161);
   background-color: $color-aux;
 }
 

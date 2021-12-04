@@ -47,19 +47,19 @@ h3 {
 /* ====LOGO==== */
 
 .logo-main {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   position: absolute;
   left: 30px;
-  top: 0;
+  top: 5px;
 }
 
 @media screen and (max-width: 1000px) {
   .logo-main {
-    width: 75px;
-    height: 75px;
-    left: 42vw;
-    top: 20px;
+    width: 65px;
+    height: 65px;
+    left: 45vw;
+    top: 15px;
   }
 }
 /* ==============================FOOTER======================== */
