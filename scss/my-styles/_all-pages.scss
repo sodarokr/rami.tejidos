@@ -2,7 +2,7 @@
 
 body {
   font-family: $font-family-body;
-  margin: 0 100px;
+  // margin: 0 100px;
   background-color: $color-fondo;
   position: relative;
 }
@@ -50,10 +50,18 @@ h3 {
   width: 150px;
   height: 150px;
   position: absolute;
-  left: 15px;
+  left: 30px;
   top: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .logo-main {
+    width: 75px;
+    height: 75px;
+    left: 42vw;
+    top: 20px;
+  }
+}
 /* ==============================FOOTER======================== */
 
 .footer__div-titulo {
@@ -93,4 +101,14 @@ h3 {
   right: 50px;
   width: 70px;
   height: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .whatsapp-floating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+  }
 }

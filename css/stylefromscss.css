@@ -305,7 +305,6 @@ template {
 
 body {
   font-family: "Lato", sans-serif;
-  margin: 0 100px;
   background-color: #fcfcfc;
   position: relative; }
 
@@ -344,8 +343,15 @@ h3 {
   width: 150px;
   height: 150px;
   position: absolute;
-  left: 15px;
+  left: 30px;
   top: 0; }
+
+@media screen and (max-width: 1000px) {
+  .logo-main {
+    width: 75px;
+    height: 75px;
+    left: 42vw;
+    top: 20px; } }
 
 /* ==============================FOOTER======================== */
 .footer__div-titulo {
@@ -382,6 +388,14 @@ h3 {
   width: 70px;
   height: 70px; }
 
+@media screen and (max-width: 1000px) {
+  .whatsapp-floating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px; } }
+
 /* ====SEPARADOR==== */
 .separador {
   background-color: #868d93;
@@ -390,7 +404,10 @@ h3 {
   font-size: 70px;
   text-align: center;
   padding: 35px; }
+  .separador::before {
+    content: "#hechoamanoconamor"; }
 
+/* ====CARDS==== */
 .my-card-izquierda {
   background-color: #868d93;
   color: #fcfcfc;
@@ -403,7 +420,6 @@ h3 {
   text-align: right;
   border: solid 2px #fcfcfc; }
 
-/* ====CARDS==== */
 .card__imagen {
   max-width: 300px;
   max-height: 300px; }
@@ -419,17 +435,8 @@ h3 {
 .card__titulo-right {
   text-align: right; }
 
-@media screen and (max-width: 1200px) {
-  .my-card-derecha {
-    flex-direction: column;
-    align-items: center; }
-    .my-card-derecha p {
-      text-align: center; }
-  .my-card-izquierda {
-    flex-direction: column-reverse;
-    align-items: center; }
-    .my-card-izquierda p {
-      text-align: center; } }
+.no-overflow {
+  overflow-x: hidden; }
 
 /* DONDE ESTAMOS? */
 .donde-estamos {
@@ -446,6 +453,25 @@ h3 {
   .donde-estamos__mapa {
     margin-bottom: 200px; }
 
+iframe {
+  max-width: 100%;
+  height: 450px; }
+
+/* ==============================MEDIA QUERIES======================== */
+@media screen and (max-width: 1200px) {
+  .separador::before {
+    content: "# hecho a mano con amor"; }
+  .my-card-derecha {
+    flex-direction: column;
+    align-items: center; }
+    .my-card-derecha p {
+      text-align: center; }
+  .my-card-izquierda {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .my-card-izquierda p {
+      text-align: center; } }
+
 /* ===========================CATALOGO========================= */
 /* SECCIONES */
 .catalogo-card-precio {
@@ -454,10 +480,9 @@ h3 {
   text-align: center; }
 
 .seccion-catalogo__titulo {
-  width: 450px;
   padding: 25px;
   margin-bottom: 30px;
-  margin-left: 12px;
+  margin-left: 0;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
@@ -469,6 +494,10 @@ h3 {
   .card-animation:hover {
     border: solid 2px #868d93b6;
     transform: scale(1.05); }
+
+.card-img {
+  max-height: 750px;
+  max-width: 750px; }
 
 .catalogo-wrapper article {
   margin-right: 25px; }
@@ -487,9 +516,7 @@ h3 {
   margin-bottom: 70px; }
 
 .historia__texto {
-  width: 600px;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  color: #b1a9a1;
-  margin: 0 auto 100px auto; }
+  color: #b1a9a1; }

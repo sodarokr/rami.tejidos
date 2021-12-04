@@ -30,13 +30,26 @@
     <!-- CSS-->
     <link rel="stylesheet" href="css/stylefromscss.css" />
 
-    <title>Rami. Hecho a mano con amor</title>
+    <link
+      rel="shortcut icon"
+      href="public/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Nuestros Productos | Rami.</title>
+
+    <meta
+      name="description"
+      content="Los mejores productos a crochet. Traénos tu idea o diseño. Productos hechos a medida. #hechoamanoconamor"
+    />
+    <meta
+      name="keywords"
+      content="AMIGURUMIS, TRAPILLO, CROCHET, INDUMENTARIA, INDUMENTARIA BEBÉ, TEJIDOS DE PUNTO, ACCESORIOS MONTESSORI, COLECCIÓN APEGOS, HOLDERS"
+    />
   </head>
 
   <body>
     <!--* Logo que siempre envia a Inicio y nombre del emprendimiento -->
     <!--* Menu navegación del sitio -->
-
     <nav
       class="navbar sticky-top navbar-expand-lg navbar-dark nav-gris p-3 mb-5"
     >
@@ -169,12 +182,16 @@
 
       <!-- SEPARADOR HECHO CON AMOR -->
       <div class="container mb-4">
-        <p class="separador">#hechoamanoconamor</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <p class="separador"></p>
+          </div>
+        </div>
       </div>
 
       <!-- IMAGENES DE PRESENTACION -->
       <div class="container mb-4">
-        <div class="row gx-5">
+        <div class="row d-flex justify-content-center gx-5">
           <div class="col-md-4">
             <img
               class="img-fluid"
@@ -198,12 +215,12 @@
 
     <main class="mb-5 pb-5">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row d-flex justify-content-center mb-5">
           <div class="col-md-12">
             <h1 class="nuestros-productos">NUESTROS PRODUCTOS</h1>
           </div>
         </div>
-        <div class="row d-flex justify-content-start mb-3">
+        <div class="row d-flex justify-content-start mb-3 no-overflow">
           <div
             data-aos="fade-right"
             class="
@@ -223,7 +240,7 @@
             <p class="card__titulo card__titulo-left">AMIGURUMIS</p>
           </div>
         </div>
-        <div class="row d-flex justify-content-end mb-3">
+        <div class="row d-flex justify-content-end mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -243,7 +260,7 @@
             />
           </div>
         </div>
-        <div class="row d-flex justify-content-start mb-3">
+        <div class="row d-flex justify-content-start mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -263,7 +280,7 @@
             <p class="card__titulo card__titulo-left">CROCHET</p>
           </div>
         </div>
-        <div class="row d-flex justify-content-end mb-3">
+        <div class="row d-flex justify-content-end mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -283,7 +300,7 @@
             />
           </div>
         </div>
-        <div class="row d-flex justify-content-start mb-3">
+        <div class="row d-flex justify-content-start mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -303,7 +320,7 @@
             <p class="card__titulo card__titulo-left">TEJIDOS DE PUNTO</p>
           </div>
         </div>
-        <div class="row d-flex justify-content-end mb-3">
+        <div class="row d-flex justify-content-end mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -323,7 +340,7 @@
             />
           </div>
         </div>
-        <div class="row d-flex justify-content-start mb-3">
+        <div class="row d-flex justify-content-start mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -343,7 +360,7 @@
             <p class="card__titulo card__titulo-left">COLECCION APEGOS</p>
           </div>
         </div>
-        <div class="row d-flex justify-content-end mb-3">
+        <div class="row d-flex justify-content-end mb-3 no-overflow">
           <div
             class="
               col-md-8
@@ -366,10 +383,17 @@
       </div>
     </main>
 
+    <a href="https://web.whatsapp.com/" target="_blank"
+      ><img
+        class="whatsapp-floating"
+        src="public/img/whatsapp.png"
+        alt="Iniciar chat en Whatsapp"
+    /></a>
+
     <!-- DONDE ESTAMOS? -->
     <section class="mb-5">
       <div class="container donde-estamos">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-12 d-flex flex-column align-items-center">
             <h2 class="donde-estamos__titulo">DONDE ESTAMOS?</h2>
             <iframe
@@ -386,16 +410,9 @@
       </div>
     </section>
 
-    <a href="https://web.whatsapp.com/" target="_blank"
-      ><img
-        class="whatsapp-floating"
-        src="public/img/whatsapp.png"
-        alt="Iniciar chat en Whatsapp"
-    /></a>
-
     <footer>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-4 d-flex flex-column align-items-center">
             <h3 class="footer__div-titulo">CONTACTO</h3>
             <ul class="contacto">
@@ -406,16 +423,21 @@
           <div class="col-md-4 d-flex flex-column align-items-center">
             <h3 class="footer__div-titulo">NUESTRAS REDES</h3>
             <div class="redes">
-              <img
-                class="footer-img"
-                src="public/img/facebook.png"
-                alt="facebook"
-              />
-              <img
-                class="footer-img"
-                src="public/img/instagram.png"
-                alt="instagram"
-              />
+              <a href="https://www.facebook.com/rami.lanitas/" target="_blank">
+                <img
+                  class="footer-img"
+                  src="public/img/facebook.png"
+                  alt="facebook"
+                />
+              </a>
+
+              <a href="https://www.instagram.com/rami.lanita/" target="_blank">
+                <img
+                  class="footer-img"
+                  src="public/img/instagram.png"
+                  alt="instagram"
+                />
+              </a>
             </div>
           </div>
           <div class="col-md-4">
