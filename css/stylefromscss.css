@@ -396,6 +396,11 @@ h3 {
     width: 35px;
     height: 35px; } }
 
+/* ====PRESENTACION==== */
+@media screen and (max-width: 755px) {
+  .presentacion {
+    margin: 15px 0; } }
+
 /* ====SEPARADOR==== */
 .separador {
   background-color: #868d93;
@@ -459,8 +464,10 @@ iframe {
 
 /* ==============================MEDIA QUERIES======================== */
 @media screen and (max-width: 1200px) {
-  .separador::before {
-    content: "# hecho a mano con amor"; }
+  .separador {
+    font-size: 30px;
+    padding: 20px 0;
+    margin: 0; }
   .my-card-derecha {
     flex-direction: column;
     align-items: center; }
@@ -470,7 +477,9 @@ iframe {
     flex-direction: column-reverse;
     align-items: center; }
     .my-card-izquierda p {
-      text-align: center; } }
+      text-align: center; }
+  .card__imagen {
+    padding-bottom: 10px; } }
 
 /* ===========================CATALOGO========================= */
 /* SECCIONES */
@@ -503,6 +512,10 @@ iframe {
 
 .catalogo-wrapper article {
   margin-right: 25px; }
+
+@media screen and (max-width: 755px) {
+  .margin-mobile {
+    margin: 10px 0; } }
 
 /* ===========================PEDIDO========================= */
 .main-pedido {

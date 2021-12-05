@@ -1,6 +1,14 @@
 @import "../mixins/mixins";
 @import "../variables/variables";
 
+/* ====PRESENTACION==== */
+
+@media screen and (max-width: 755px) {
+  .presentacion {
+    margin: 15px 0;
+  }
+}
+
 /* ====SEPARADOR==== */
 
 .separador {
@@ -79,8 +87,10 @@ iframe {
 /* ==============================MEDIA QUERIES======================== */
 
 @media screen and (max-width: 1200px) {
-  .separador::before {
-    content: "# hecho a mano con amor";
+  .separador {
+    font-size: 30px;
+    padding: 20px 0;
+    margin: 0;
   }
 
   .my-card-derecha {
@@ -96,5 +106,9 @@ iframe {
     p {
       text-align: center;
     }
+  }
+
+  .card__imagen {
+    padding-bottom: 10px;
   }
 }

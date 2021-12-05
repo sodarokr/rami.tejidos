@@ -39,3 +39,9 @@
 .catalogo-wrapper article {
   margin-right: 25px;
 }
+
+@media screen and (max-width: 755px) {
+  .margin-mobile {
+    margin: 10px 0;
+  }
+}
